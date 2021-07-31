@@ -97,7 +97,7 @@ y=y*testArray[i];
 // console.log(y);
 }
 
-return [y,`The numbers 2,3,4 have a product of 24.`];
+return [y,`The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${y}.`];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -119,14 +119,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-let x;
+let  x;
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 x=1;
 for(let i=0;i<dynamicArray.length;i++){
 
   x=x*dynamicArray[i];
 }
-return [x,`The numbers 1,2,3,4,5 have a product of 120.`]
+return [x,`The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${x}.`]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
